@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expense Tracker</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="en">
+    <meta name="description" content="This is an Expense Tracker">
+    <meta name="author" content="Bruce Bainomugisha">
+    <meta name="keywords" content="expense, tracker">
+
+	<link rel="icon" href="expense-tracker-icon.png" type="image/png">
+    <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+	<h1>Expense Tracker</h1>
+	<form>
+		<label for="name">Expense Name:</label>
+		<input type="text" id="name">
+
+		<label for="amount">Amount:</label>
+		<input type="number" id="amount">
+
+		<label for="date">Date:</label>
+		<input type="date" id="date">
+
+		<input type="submit" value="Add Expense">
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Expense Name</th>
+				<th>Amount</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody id="expense-list">
+			
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td id="total"></td>
+			</tr>
+		</tfoot>
+	</table>
+	<script src="tracker.js"></script>
+</body>
+</html>
